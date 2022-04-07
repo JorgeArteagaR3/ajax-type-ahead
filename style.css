@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #ffcf00;
+}
+
+body {
+  text-align: center;
+}
+
+.location-container {
+  margin-top: 6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.location-container h2 {
+  font-size: 3rem;
+  margin-bottom: 1em;
+  color: rgba(19, 19, 19, 0.621);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.location-container input {
+  padding: 0.5em;
+  text-align: center;
+  min-width: 300px;
+  border: 10px solid whitesmoke;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(19, 19, 19, 0.621);
+}
+
+.location-container input::-webkit-input-placeholder {
+  color: rgba(19, 19, 19, 0.3);
+}
+
+.location-container input:-ms-input-placeholder {
+  color: rgba(19, 19, 19, 0.3);
+}
+
+.location-container input::-ms-input-placeholder {
+  color: rgba(19, 19, 19, 0.3);
+}
+
+.location-container input::placeholder {
+  color: rgba(19, 19, 19, 0.3);
+}
+
+.location-container .suggestions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.location-container .suggestions li {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  min-width: 250px;
+  list-style: none;
+  background-color: whitesmoke;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 1.3rem;
+}
+
+.hl {
+  background-color: #ffcf00;
+}
+
+@media only screen and (min-width: 1000px) {
+  .location-container input {
+    min-width: 500px;
+  }
+  .location-container .suggestions li {
+    min-width: 380px;
+    font-size: 1.6rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
